@@ -1,0 +1,13 @@
+{
+  "name": "babel-plugin-transform-d3-imports",
+  "version": "0.0.0",
+  "description": "This plugin transforms named imports into directly imports from 'd3-*'",
+  "keywords": [
+    "babel-plugin",
+    "d3",
+    "optimize"
+  ],
+  "main": "index.js",
+  "license": "MIT",
+  "private": true
+}
