@@ -12,8 +12,7 @@ bootstrap:
 		echo "\nNo 'yarn' detected. We used yarn to manage our dependencies.\n"; \
 		exit 1; \
 	fi; \
-		yarn install --frozen-lockfile; \
-		make build
+		yarn install --frozen-lockfile;
 
 build:
 	make clean
@@ -55,6 +54,14 @@ test-coverage:
 	BABEL_ENV=test BABEL_COVERAGE=true make build
 	BABEL_ENV=test node_modules/.bin/nyc node_modules/.bin/ava
 	node_modules/.bin/nyc report --reporter=html
+
+test-ci-coverage:
+	@set -e
+	BABEL_ENV=test BABEL_COVERAGE=true make bootstrap
+	make build
+	BABEL_ENV=test node_modules/.bin/nyc node_modules/.bin/ava
+	node_modules/.bin/nyc report --reporter=json
+	node_modules/.bin/codecov -f coverage/coverage-final.json
 
 clean-cache:
 	@rm -rf \
