@@ -11,6 +11,10 @@
     "d3",
     "optimize"
   ],
+  "files": [
+    "index.js",
+    "lib/**/*.js"
+  ],
   "peerDependencies": {
     "@babel/core": "^7.0.0-0"
   },
