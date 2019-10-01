@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-transform-d3-imports",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Optimize bundle size for D3@5 with ESModule",
   "main": "index.js",
   "repository": "https://github.com/shirohana/babel-plugin-transform-d3-imports",
