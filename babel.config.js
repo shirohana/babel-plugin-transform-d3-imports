@@ -16,7 +16,7 @@ module.exports = function (api) {
     sourceType: 'module',
     comments: false,
     ignore: [
-      '__tests__/fixtures',
+      'test/fixtures',
       'lib'
     ],
     presets: [['@babel/env', envOpts]],
@@ -26,28 +26,29 @@ module.exports = function (api) {
   }
 
   switch (env) {
-    case 'production':
-      envOpts.targets = {
-        node: nodeVersion
-      }
-      break
-    case 'test':
-      envOpts.targets = {
-        node: 'current'
-      }
-      if (process.env.BABEL_COVERAGE === 'true') {
-        config.plugins.push(['babel-plugin-istanbul'])
-      }
-      break
-    case 'development':
-      envOpts.debug = true
-      envOpts.targets = {
-        node: 'current'
-      }
-    default:
-      envOpts.targets = {
-        node: 'current'
-      }
+  case 'production':
+    envOpts.targets = {
+      node: nodeVersion
+    }
+    break
+  case 'test':
+    envOpts.targets = {
+      node: 'current'
+    }
+    if (process.env.BABEL_COVERAGE === 'true') {
+      config.plugins.push(['babel-plugin-istanbul'])
+    }
+    break
+  case 'development':
+    envOpts.debug = true
+    envOpts.targets = {
+      node: 'current'
+    }
+    break
+  default:
+    envOpts.targets = {
+      node: 'current'
+    }
   }
 
   return config
