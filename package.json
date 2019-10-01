@@ -1,13 +1,47 @@
 {
   "name": "babel-plugin-transform-d3-imports",
-  "version": "0.0.0",
-  "description": "This plugin transforms named imports into directly imports from 'd3-*'",
+  "version": "0.1.0",
+  "description": "Optimize bundle size for D3@5 with ESModule",
+  "main": "index.js",
+  "repository": "https://github.com/shirohana/babel-plugin-transform-d3-imports",
+  "author": "Hana Shiro <shirohana0608@gmail.com>",
+  "license": "MIT",
   "keywords": [
     "babel-plugin",
     "d3",
     "optimize"
   ],
-  "main": "index.js",
-  "license": "MIT",
-  "private": true
+  "files": [
+    "index.js",
+    "lib/**/*.js"
+  ],
+  "peerDependencies": {
+    "@babel/core": "^7.0.0-0"
+  },
+  "dependencies": {
+    "@babel/helper-plugin-utils": "^7.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/plugin-transform-flow-strip-types": "^7.4.4",
+    "@babel/preset-env": "^7.6.2",
+    "ava": "^2.4.0",
+    "babel-eslint": "^10.0.3",
+    "babel-plugin-istanbul": "^5.2.0",
+    "codecov": "^3.6.1",
+    "d3": "^5.12.0",
+    "eslint": "^6.5.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-flowtype": "^4.2.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "flow-bin": "^0.108.0",
+    "husky": "^3.0.7",
+    "lint-staged": "^9.4.0",
+    "nyc": "^14.1.1",
+    "rollup": "^1.22.0",
+    "rollup-plugin-babel": "^4.3.3"
+  }
 }
