@@ -111,7 +111,7 @@ import { select } from "d3-selection";
 How it works
 ------------
 
-We created a static mapping for all dependencies of `d3@^5.12.0`, so we can
+We created a static mapping for all dependencies of `d3@^5.15.0`, so we can
 rewrite all importDeclaration correctly.
 
 Don't worry about if the map had inconsistent between this plugins and latest
