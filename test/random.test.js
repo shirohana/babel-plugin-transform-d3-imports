@@ -81,8 +81,11 @@ test('(d3-drag)', t => {
 })
 
 test('(d3-dsv)', t => {
-  const a = 'import { csvParse, csvFormat } from "d3-dsv"'
-  const b = 'import { csvParse, csvFormat } from "d3-dsv/src/csv";'
+  const a = 'import { csvParse, csvFormat, tsvFormatValue } from "d3-dsv"'
+  const b = [
+    'import { csvParse, csvFormat } from "d3-dsv/src/csv";',
+    'import { tsvFormatValue } from "d3-dsv/src/tsv";'
+  ].join('\n')
   t.is(b, t.context.transform(a))
 })
 
