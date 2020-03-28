@@ -154,10 +154,11 @@ test('(d3-hierarchy)', t => {
 })
 
 test('(d3-interpolate)', t => {
-  const a = 'import { interpolate, interpolateArray } from "d3-interpolate"'
+  const a = 'import { interpolate, interpolateArray, interpolateNumberArray } from "d3-interpolate"'
   const b = [
     'import interpolate from "d3-interpolate/src/value";',
-    'import interpolateArray from "d3-interpolate/src/array";'
+    'import interpolateArray from "d3-interpolate/src/array";',
+    'import interpolateNumberArray from "d3-interpolate/src/numberArray";'
   ].join('\n')
   t.is(b, t.context.transform(a))
 })
