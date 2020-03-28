@@ -10,6 +10,7 @@ const defaultD3Interpolate: NamedModuleImportMap = {
   interpolateDiscrete: 'd3-interpolate/src/discrete',
   interpolateHue: 'd3-interpolate/src/hue',
   interpolateNumber: 'd3-interpolate/src/number',
+  interpolateNumberArray: 'd3-interpolate/src/numberArray',
   interpolateObject: 'd3-interpolate/src/object',
   interpolateRound: 'd3-interpolate/src/round',
   interpolateString: 'd3-interpolate/src/string',
