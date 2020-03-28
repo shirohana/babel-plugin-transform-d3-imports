@@ -5,7 +5,7 @@ babel-plugin-transform-d3-imports
 [d3js_github]: https://github.com/d3/d3
 
 [![npm](https://img.shields.io/npm/v/babel-plugin-transform-d3-imports.svg)](https://www.npmjs.com/package/babel-plugin-transform-d3-imports)
-[![travis](https://img.shields.io/travis/shirohana/babel-plugin-transform-d3-imports.svg)](https://www.npmjs.com/package/babel-plugin-transform-d3-imports)
+[![travisCI](https://img.shields.io/travis/shirohana/babel-plugin-transform-d3-imports.svg)](https://travis-ci.org/github/shirohana/babel-plugin-transform-d3-imports)
 [![codecov](https://codecov.io/gh/shirohana/babel-plugin-transform-d3-imports/branch/develop/graph/badge.svg)](https://codecov.io/gh/shirohana/babel-plugin-transform-d3-imports)
 [![license](https://img.shields.io/npm/l/babel-plugin-transform-d3-imports.svg)](https://www.npmjs.com/package/babel-plugin-transform-d3-imports)
 
