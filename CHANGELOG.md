@@ -4,6 +4,10 @@ Changelog
 [Unreleased]
 ------------
 
+[0.2.1] - 2020-07-28
+--------------------
+> Bump lockfile due to [security vulnerability](https://github.com/shirohana/babel-plugin-transform-d3-imports/pull/5).
+
 [0.2.0] - 2020-03-29
 --------------------
 
@@ -28,5 +32,6 @@ Changelog
 ### :tada: First Release
 
 [Unreleased]: #user-content-unreleased
+[0.2.1]: https://github.com/shirohana/babel-plugin-transform-d3-imports/releases/tag/v0.2.1
 [0.2.0]: https://github.com/shirohana/babel-plugin-transform-d3-imports/releases/tag/v0.2.0
 [0.1.0]: https://github.com/shirohana/babel-plugin-transform-d3-imports/releases/tag/v0.1.0
