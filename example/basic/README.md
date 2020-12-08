@@ -1,8 +1,6 @@
 @babel-plugin-transform-d3-imports/example-basic
 ================================================
-<p align="center">
-  <img alt="preview" align="center" src="https://raw.githubusercontent.com/shirohana/babel-plugin-transform-d3-imports/develop/example/basic/assets/preview.png">
-</p>
+![preview](https://raw.githubusercontent.com/shirohana/babel-plugin-transform-d3-imports/develop/example/basic/assets/preview.jpg)
 
 Quick Start
 -----------
@@ -30,8 +28,4 @@ import { schemePastel1 } from 'd3-scale-chromatic'
 
 and the result:
 
-### Without Plugin
-![analyze-without-plugin](https://raw.githubusercontent.com/shirohana/babel-plugin-transform-d3-imports/develop/example/basic/assets/analyze-without-plugin.jpg)
-
-### With Plugin
-![analyze-with-plugin](https://raw.githubusercontent.com/shirohana/babel-plugin-transform-d3-imports/develop/example/basic/assets/analyze-with-plugin.jpg)
+![before-after](https://raw.githubusercontent.com/shirohana/babel-plugin-transform-d3-imports/develop/example/basic/assets/before-after.jpg)

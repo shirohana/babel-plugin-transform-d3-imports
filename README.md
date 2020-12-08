@@ -17,11 +17,10 @@ babel-plugin-transform-d3-imports
 [Options]: #user-content-options
 [Why]: #user-content-why
 [How it works]: #user-content-how-it-works
-[Q&A]: #user-content-q--a
+[Q&A]: #user-content-qa
 
 Example
 -------
-
 #### In
 ```javascript
 import { select, event } from "d3-selection";
@@ -44,7 +43,6 @@ import { csv } from "d3-fetch/src/dsv";
 
 Installation
 ------------
-
 #### Via yarn
 ```shell
 yarn add -D babel-plugin-transform-d3-imports
@@ -57,7 +55,6 @@ npm install --save-dev babel-plugin-transform-d3-imports
 
 Usage
 -----
-
 ### Via `babel.config.js` (aka `.babelrc`)
 
 #### babel.config.js
@@ -71,12 +68,10 @@ module.exports = function () {
 
 Options
 -------
-
 Currently none.
 
 Why
 ---
-
 Since you import any of:
 
 - `default`: `import shape from "d3-shape";`,
@@ -110,9 +105,12 @@ import { arc, pie } from "d3-shape";
 import { select } from "d3-selection";
 ```
 
+and you got:
+
+![before-after of example/basic](https://raw.githubusercontent.com/shirohana/babel-plugin-transform-d3-imports/develop/example/basic/assets/before-after.jpg)
+
 How it works
 ------------
-
 We created a static mapping for all dependencies of `d3@^5.16.0`, so we can
 rewrite all importDeclaration correctly.
 
@@ -120,9 +118,8 @@ Don't worry about if the map had inconsistent between this plugins and latest
 version of **D3**. If it contains any not-matched import, we will not modify
 your imports.
 
-Q & A
------
-
+Q&A
+---
 ### Who may need this plugin?
 If you're using **D3** with any bundler which can parsed by Babel,
   you'll need this plugin.
