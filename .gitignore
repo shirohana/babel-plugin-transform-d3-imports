@@ -1,4 +1,5 @@
 *.log
+.eslintcache
 .nyc_output
 coverage
 lib

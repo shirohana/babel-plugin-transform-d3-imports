@@ -40,6 +40,8 @@ import scaleBand from "d3-scale/src/band";
 import { csv } from "d3-fetch/src/dsv";
 ```
 
+- [Basic](https://github.com/shirohana/babel-plugin-transform-d3-imports/tree/develop/example/basic)
+
 Installation
 ------------
 
